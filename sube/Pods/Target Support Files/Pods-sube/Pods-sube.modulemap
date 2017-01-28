@@ -1,0 +1,6 @@
+framework module Pods_sube {
+  umbrella header "Pods-sube-umbrella.h"
+
+  export *
+  module * { export * }
+}
