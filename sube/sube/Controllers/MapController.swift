@@ -1,15 +1,15 @@
 //
-//  ViewController.swift
+//  MapController.swift
 //  sube
 //
-//  Created by Carlos Saldana on 1/27/17.
+//  Created by Luis Nafarrate on 1/27/17.
 //  Copyright © 2017 none. All rights reserved.
 //
 
 import UIKit
 import GoogleMaps
 
-class ViewController: UIViewController {
+class MapController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,12 +26,4 @@ class ViewController: UIViewController {
         marker.snippet = "Australia"
         marker.map = mapView
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-
