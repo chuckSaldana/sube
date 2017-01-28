@@ -24,7 +24,7 @@ class BasicInfoViewController: UIViewController, UIPickerViewDataSource, UIPicke
         // Do any additional setup after loading the view.
     }
 
-    override func viewDidAppear(animated: Bool) {
+    override func viewWillAppear(animated: Bool) {
         picker?.hidden = true
     }
 
