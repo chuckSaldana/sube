@@ -17,6 +17,7 @@
 		B6CE6E811E3C4EBF00BE212A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6CE6E7F1E3C4EBF00BE212A /* LaunchScreen.storyboard */; };
 		B6CE6E8C1E3C4EC100BE212A /* subeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CE6E8B1E3C4EC100BE212A /* subeTests.swift */; };
 		B6CE6E971E3C4EC100BE212A /* subeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CE6E961E3C4EC100BE212A /* subeUITests.swift */; };
+		B6CE6EA51E3C709100BE212A /* BasicInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CE6EA41E3C709100BE212A /* BasicInfoViewController.swift */; };
 		EB9FB669DFDB5DAB7918E934 /* Pods_sube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39CFAD0F52CF75F18DAFBA2F /* Pods_sube.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		B6CE6E921E3C4EC100BE212A /* subeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = subeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6CE6E961E3C4EC100BE212A /* subeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subeUITests.swift; sourceTree = "<group>"; };
 		B6CE6E981E3C4EC100BE212A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6CE6EA41E3C709100BE212A /* BasicInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicInfoViewController.swift; sourceTree = "<group>"; };
 		BAF725DA25D6F657D2F07AAF /* Pods-subeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-subeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-subeTests/Pods-subeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF4A3E1DB6BD40C99CF8DA4F /* Pods-subeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-subeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-subeUITests/Pods-subeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D0D8831924480204331A6443 /* Pods_subeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_subeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +148,7 @@
 				B6CE6E7F1E3C4EBF00BE212A /* LaunchScreen.storyboard */,
 				B6CE6E821E3C4EC000BE212A /* Info.plist */,
 				B6CE6E7A1E3C4EBF00BE212A /* sube.xcdatamodeld */,
+				B6CE6EA41E3C709100BE212A /* BasicInfoViewController.swift */,
 			);
 			path = sube;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6CE6E761E3C4EBF00BE212A /* ViewController.swift in Sources */,
+				B6CE6EA51E3C709100BE212A /* BasicInfoViewController.swift in Sources */,
 				B6CE6E741E3C4EBF00BE212A /* AppDelegate.swift in Sources */,
 				B6CE6E7C1E3C4EBF00BE212A /* sube.xcdatamodeld in Sources */,
 			);
@@ -684,6 +688,7 @@
 				B6CE6E9D1E3C4EC200BE212A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6CE6E9E1E3C4EC200BE212A /* Build configuration list for PBXNativeTarget "subeTests" */ = {
 			isa = XCConfigurationList;
@@ -692,6 +697,7 @@
 				B6CE6EA01E3C4EC200BE212A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6CE6EA11E3C4EC200BE212A /* Build configuration list for PBXNativeTarget "subeUITests" */ = {
 			isa = XCConfigurationList;
@@ -700,6 +706,7 @@
 				B6CE6EA31E3C4EC200BE212A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
