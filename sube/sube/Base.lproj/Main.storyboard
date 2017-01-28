@@ -326,6 +326,10 @@
                                         <include reference="MAG-Y0-PMi"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="biE-UO-9VF" id="YSR-1F-Wxc"/>
+                                    <outlet property="delegate" destination="biE-UO-9VF" id="HQI-0b-UWl"/>
+                                </connections>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -428,13 +432,14 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="continue" destination="1lw-OX-yTL" id="Ywk-Rf-beE"/>
+                        <outlet property="cityTxtF" destination="LCJ-Rr-bGc" id="kRH-sQ-v0L"/>
                         <outlet property="picker" destination="ybk-2b-JFm" id="8MO-Mo-JAw"/>
+                        <outlet property="stateTxtF" destination="Oe3-Lg-gb7" id="vwF-dk-pYr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XW9-Bt-9Hj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="327" y="825"/>
+            <point key="canvasLocation" x="327" y="719.25"/>
         </scene>
         <!--MenuVC-->
         <scene sceneID="t61-hg-kdU">
@@ -605,7 +610,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EIB-1c-t5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="327" y="1557"/>
+            <point key="canvasLocation" x="327" y="1406.25"/>
         </scene>
         <!--Tomar Autobús-->
         <scene sceneID="c2j-mL-XqJ">
