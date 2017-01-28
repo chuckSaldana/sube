@@ -8,6 +8,8 @@
 
 import UIKit
 
+let routes = ["Plaza del Sol #5", "Andares #91", "Ciudadela #7", "Centro #1", "Universidad #105", "Tlajomulco #19", "Chapalita #84"]
+
 class AvailableRoutesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var routesTableView: UITableView!
@@ -35,10 +37,18 @@ class AvailableRoutesVC: UIViewController, UITableViewDelegate, UITableViewDataS
     */
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return routes.count
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = UITableViewCell.init(style: .Default, reuseIdentifier: "RoutesCell")
+        cell.textLabel?.text = routes[indexPath.row]
+        return cell
+    }
+
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        let mapController = MapController()
+        mapController.initMap()
+        self.navigationController?.pushViewController(mapController, animated: true)
     }
 }
