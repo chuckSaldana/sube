@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BasicInfoViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class BasicInfoViewController: BaseController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet weak var cityTxtF: UITextField!
     @IBOutlet weak var stateTxtF: UITextField!
@@ -50,6 +50,13 @@ class BasicInfoViewController: UIViewController, UIPickerViewDataSource, UIPicke
 
     @IBAction func useCurrentLocation(sender: AnyObject) {
 
+    }
+    @IBOutlet weak var `continue`: UIButton!
+    
+    @IBAction func `continue`(sender: AnyObject) {
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let menuVC = storyboard.instantiateViewControllerWithIdentifier("MenuVC") as? MenuVC
+        self.navigationController?.pushViewController(menuVC!, animated: true)
     }
 
          /*

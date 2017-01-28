@@ -43,6 +43,11 @@ class MapController: BaseController {
         updateMarkerPosition()
     }
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBarHidden = false
+    }
+
     func updateMarkerPosition() {
         var counter = 0.5
         var minutesArrive = 11
