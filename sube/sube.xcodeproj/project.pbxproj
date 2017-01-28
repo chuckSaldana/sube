@@ -17,6 +17,9 @@
 		B6CE6E811E3C4EBF00BE212A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6CE6E7F1E3C4EBF00BE212A /* LaunchScreen.storyboard */; };
 		B6CE6E8C1E3C4EC100BE212A /* subeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CE6E8B1E3C4EC100BE212A /* subeTests.swift */; };
 		B6CE6E971E3C4EC100BE212A /* subeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CE6E961E3C4EC100BE212A /* subeUITests.swift */; };
+		B6DD761B1E3CEF5B00727FC4 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DD761A1E3CEF5B00727FC4 /* MenuVC.swift */; };
+		B6DD761D1E3CF14000727FC4 /* SetRouteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DD761C1E3CF14000727FC4 /* SetRouteVC.swift */; };
+		B6DD761F1E3D01F500727FC4 /* AvailableRoutesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DD761E1E3D01F500727FC4 /* AvailableRoutesVC.swift */; };
 		DD36EAD81E3C8D03009DE600 /* BasicInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD36EAD71E3C8D03009DE600 /* BasicInfoViewController.swift */; };
 		DD3800951E3C67B900E0A964 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3800941E3C67B900E0A964 /* MapController.swift */; };
 		DD9DD9AA1E3C7BE70089D583 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DD9A91E3C7BE70089D583 /* BaseController.swift */; };
@@ -60,6 +63,9 @@
 		B6CE6E921E3C4EC100BE212A /* subeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = subeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6CE6E961E3C4EC100BE212A /* subeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subeUITests.swift; sourceTree = "<group>"; };
 		B6CE6E981E3C4EC100BE212A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6DD761A1E3CEF5B00727FC4 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		B6DD761C1E3CF14000727FC4 /* SetRouteVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetRouteVC.swift; sourceTree = "<group>"; };
+		B6DD761E1E3D01F500727FC4 /* AvailableRoutesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableRoutesVC.swift; sourceTree = "<group>"; };
 		BAF725DA25D6F657D2F07AAF /* Pods-subeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-subeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-subeTests/Pods-subeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF4A3E1DB6BD40C99CF8DA4F /* Pods-subeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-subeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-subeUITests/Pods-subeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D0D8831924480204331A6443 /* Pods_subeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_subeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +165,9 @@
 				B6CE6E7F1E3C4EBF00BE212A /* LaunchScreen.storyboard */,
 				B6CE6E821E3C4EC000BE212A /* Info.plist */,
 				B6CE6E7A1E3C4EBF00BE212A /* sube.xcdatamodeld */,
+				B6DD761A1E3CEF5B00727FC4 /* MenuVC.swift */,
+				B6DD761C1E3CF14000727FC4 /* SetRouteVC.swift */,
+				B6DD761E1E3D01F500727FC4 /* AvailableRoutesVC.swift */,
 			);
 			path = sube;
 			sourceTree = "<group>";
@@ -462,10 +471,13 @@
 			files = (
 				DD3800951E3C67B900E0A964 /* MapController.swift in Sources */,
 				DD36EAD81E3C8D03009DE600 /* BasicInfoViewController.swift in Sources */,
+				B6DD761B1E3CEF5B00727FC4 /* MenuVC.swift in Sources */,
 				B6CE6E761E3C4EBF00BE212A /* ViewController.swift in Sources */,
+				B6DD761F1E3D01F500727FC4 /* AvailableRoutesVC.swift in Sources */,
 				DD9DD9AA1E3C7BE70089D583 /* BaseController.swift in Sources */,
 				B6CE6E741E3C4EBF00BE212A /* AppDelegate.swift in Sources */,
 				B6CE6E7C1E3C4EBF00BE212A /* sube.xcdatamodeld in Sources */,
+				B6DD761D1E3CF14000727FC4 /* SetRouteVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

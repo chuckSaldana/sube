@@ -39,6 +39,9 @@ class BasicInfoViewController: UIViewController/*, UIPickerViewDataSource, UIPic
     }
     
 
+    @IBAction func useCurrentLocation(sender: AnyObject) {
+    }
+    @IBOutlet weak var `continue`: UIButton!
     /*
     // MARK: - Navigation
 

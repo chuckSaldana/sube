@@ -14,6 +14,7 @@ class ViewController: BaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        return
         mapController.initMap()
         self.view.addSubview(mapController.view)
         mapController.view.frame = self.view.frame
