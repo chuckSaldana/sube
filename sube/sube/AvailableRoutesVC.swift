@@ -48,7 +48,7 @@ class AvailableRoutesVC: UIViewController, UITableViewDelegate, UITableViewDataS
 
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
         let mapController = MapController()
-        mapController.initMap()
+        mapController.initMap(routeName: routes[indexPath.row])
         self.navigationController?.pushViewController(mapController, animated: true)
     }
 }
