@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SetRouteVC: UIViewController {
+class SetRouteVC: BaseController {
 
     @IBOutlet weak var departureTxtF: UITextField!
     @IBOutlet weak var arrivalTxtF: UITextField!
@@ -36,6 +36,14 @@ class SetRouteVC: UIViewController {
 
     }
 
+    @IBAction func `continue`(sender: AnyObject) {
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let availableRoutesVC = storyboard.instantiateViewControllerWithIdentifier("AvailableRoutesVC") as? AvailableRoutesVC
+        self.navigationController?.pushViewController(availableRoutesVC!, animated: true)
+    }
+    @IBAction func cancel(sender: AnyObject) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
     /*
     // MARK: - Navigation
 

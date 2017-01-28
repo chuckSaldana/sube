@@ -8,6 +8,14 @@
 
 import UIKit
 
-class MenuVC: UIViewController {
+class MenuVC: BaseController {
 
+    @IBAction func cancel(sender: AnyObject) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    @IBAction func tomarAutobus(sender: AnyObject) {
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let setRouteVC = storyboard.instantiateViewControllerWithIdentifier("SetRouteVC") as? SetRouteVC
+        self.navigationController?.pushViewController(setRouteVC!, animated: true)
+    }
 }

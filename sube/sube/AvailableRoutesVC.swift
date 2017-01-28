@@ -10,7 +10,7 @@ import UIKit
 
 let routes = ["Plaza del Sol #5", "Andares #91", "Ciudadela #7", "Centro #1", "Universidad #105", "Tlajomulco #19", "Chapalita #84"]
 
-class AvailableRoutesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class AvailableRoutesVC: BaseController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var routesTableView: UITableView!
     
@@ -18,6 +18,11 @@ class AvailableRoutesVC: UIViewController, UITableViewDelegate, UITableViewDataS
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBarHidden = false
     }
 
     override func didReceiveMemoryWarning() {
