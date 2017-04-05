@@ -9,6 +9,7 @@
 import UIKit
 
 let routes = ["Plaza del Sol #5", "Andares #91", "Ciudadela #7", "Centro #1", "Universidad #105", "Tlajomulco #19", "Chapalita #84"]
+let etas = ["Llegada inminente", "30 mins", "5 mins", "5 mins", "10 mins", "25 mins", "26 mins"]
 
 class AvailableRoutesVC: BaseController, UITableViewDelegate, UITableViewDataSource {
 
@@ -47,7 +48,9 @@ class AvailableRoutesVC: BaseController, UITableViewDelegate, UITableViewDataSou
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell.init(style: .Default, reuseIdentifier: "RoutesCell")
-        cell.textLabel?.text = routes[indexPath.row]
+        let currentETA = etas[indexPath.row]
+
+        cell.textLabel?.text = "Ruta:   \(routes[indexPath.row])        ETA:    \(currentETA)"
         return cell
     }
 
